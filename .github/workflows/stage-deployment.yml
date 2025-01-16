@@ -35,7 +35,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: 650251715409.dkr.ecr.ap-south-1.amazonaws.com
+          ECR_REGISTRY: 302263048212.dkr.ecr.us-east-1.amazonaws.com/backend-innomapper-core
           IMAGE_TAG: latest
           REPOSITORY: backend-innomapper-core
         run: |
