@@ -375,7 +375,7 @@ public class AdminApplicationManager extends Service {
                         "    \"cert\": \"cert-built-in\",\n" +
                         "    \"redirectUris\": [\n" +
                         "        \"http://localhost:8081/innowell-mapper/auth/token/login\",\n" +
-                        "        \"https://backend-stage.innowell.vidyayatan.com/innowell-mapper/auth/token/login\",\n" +
+                        "        \"https://backend-stage.aimsnetzero.com//innowell-mapper/auth/token/login\",\n" +
                         "        \"https://testing-frontend-innomapper.pages.dev/callback\",\n" +
                         "        \"https://innomapper-stage.pages.dev/callback\"\n" +
                         "    ],\n" +
