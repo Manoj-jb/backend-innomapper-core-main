@@ -72,7 +72,7 @@ public class SiteController {
     public ResponseEntity<List<SiteDto>> getAllSites(@RequestAttribute("user") CustomUserDetails user) {
         List<Site> sites = new ArrayList<>();
 
-        if(user.getOrgId() != null && (user.getOrgId().equals("admin") || user.getOrgId().equals("innowell") || user.getOrgId().equals("built-in") || user.getOrgId().equals("aimsnetzero"))) {
+        if(user.getOrgId() != null && (user.getOrgId().equals("admin") || user.getOrgId().equals("innowell") || user.getOrgId().equals("built-in") || user.getOrgId().equals("vidyayatan"))) {
                 sites = siteService.getAllSites();
         }
         if(sites.isEmpty()) sites = orgSiteService.getSitesByOrgId(user.getOrgId());
