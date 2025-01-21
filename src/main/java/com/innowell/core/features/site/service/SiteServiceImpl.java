@@ -96,7 +96,7 @@ public class SiteServiceImpl implements SiteService {
     @Override
     public Page<Site> getPaginatedSitesByIsDeletedFalse(Pageable pageable, String orgId) {
         Page<Site> sites = null;
-        if(orgId != null && (orgId.equals("admin") || orgId.equals("innowell") || orgId.equals("built-in") || orgId.equals("vidyayatan"))) {
+        if(orgId != null && (orgId.equals("admin") || orgId.equals("innowell") || orgId.equals("built-in") || orgId.equals("aimsnetzero"))) {
             sites = siteRepository.findByIsDeletedFalse(pageable);
         }
         if (sites == null || sites.isEmpty()) sites = siteRepository.findAllSitesByOrgId(orgId, pageable);
@@ -106,7 +106,7 @@ public class SiteServiceImpl implements SiteService {
     @Override
     public Page<Site> searchSitesByQueryAndIsDeletedFalse(String query, Pageable pageable, String orgId) {
         Page<Site> sites = null;
-        if(orgId != null && (orgId.equals("admin") || orgId.equals("innowell") || orgId.equals("built-in") || orgId.equals("vidyayatan"))) {
+        if(orgId != null && (orgId.equals("admin") || orgId.equals("innowell") || orgId.equals("built-in") || orgId.equals("vidyayaaimsnetzerotan"))) {
             sites = siteRepository.findBySiteNameContainingAndIsDeletedFalse(query, pageable);
         }
         if (sites == null || sites.isEmpty()) sites = siteRepository.findSitesByOrgIdAndName(orgId, query, pageable);
