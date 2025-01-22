@@ -377,7 +377,7 @@ public class AdminApplicationManager extends Service {
                         "        \"http://localhost:8081/innowell-mapper/auth/token/login\",\n" +
                         "        \"https://backend-stage.aimsnetzero.com//innowell-mapper/auth/token/login\",\n" +
                         "        \"https://testing-frontend-innomapper.pages.dev/callback\",\n" +
-                        "        \"https://frontend-iot-mapping.pages.dev/callback\"\n" +
+                        "        \"https://frontend-innomapper-main.pages.dev/callback\"\n" +
                         "    ],\n" +
                         "    \"tokenFormat\": \"JWT\",\n" +
                         "    \"tokenFields\": [],\n" +

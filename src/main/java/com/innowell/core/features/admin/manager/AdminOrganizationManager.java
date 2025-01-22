@@ -110,7 +110,7 @@ public class AdminOrganizationManager extends Service {
             loginUrl.setClientName(application.name);
             loginUrl.setClientCertificate(getCertificate());
             loginUrl.setId(application.name);
-            String url = endpoint + "/login/oauth/authorize?client_id=" + application.clientId + "&response_type=code&redirect_uri=https://frontend-iot-mapping.pages.dev/callback&scope=read&state=" + application.name;
+            String url = endpoint + "/login/oauth/authorize?client_id=" + application.clientId + "&response_type=code&redirect_uri=https://frontend-innomapper-main.pages.dev/callback&scope=read&state=" + application.name;
             loginUrl.setLoginUrl(url);
             return loginUrlRepository.save(loginUrl);
         } catch (Exception e) {
