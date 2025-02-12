@@ -48,6 +48,7 @@ jobs:
       # In production refrain from using this and use k8s service account with limited access
       # Each service account has permissions like IAM and each has its own kubeconfig
       # replace global kubeconfig with service account's kubeconfig
+      # replace global kubeconfig with service account's kubeconfig
       - name: Connect to LKE kubernetes cluster
         id: connect-to-k8s-cluster
         uses: Azure/k8s-set-context@v4.0.0
